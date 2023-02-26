@@ -1,0 +1,120 @@
+<!DOCTYPE html><!-- This web page is copied by "https://bazhan.wang" --><html><head><meta name="baidu-analysis-id" content="2u3e2x36331e372t"><meta charset="utf-8">
+    
+    <title>Hongan - <字>图画</title>
+    <meta name="description" content="Combine poetry with brush strokes with this unique form that can only really exist digitally.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--!‬‏‪‭‬‬‬‏‭‭‫‪‭‪‭‫‬‬‭‫‫‬‎‏-->
+    <link href="css/apps.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js" type="text/javascript"></script><!--!‬‏‪‭‬‬‬‏‭‭‫‪‭‪‭‫‬‬‭‫‫‬‎‏-->
+  </head>
+
+  <body>
+   
+    </div>
+    <div class="ui top-right">
+      <a class="icon save">
+        <img class="smaller" src="https://d33wubrfki0l68.cloudfront.net/e8161c3fe8d7b81ae0fc7829ea6cee1eaf5dc1de/6ae5f/assets/icon-disk.png">
+      </a>
+      <a class="icon trash">
+        <img class="smaller" src="https://d33wubrfki0l68.cloudfront.net/4e11aefb3790e4cc5575ec8eac2c5a74caedfd82/f27e4/assets/icon-trash.png">
+      </a>
+    </div>
+
+    <canvas id="canvas" class="primary"></canvas>
+    <div class="tools">
+      <div class="color tool tool-1">
+        <div class="tool-button">
+          <div class="tool-button-icon">
+            <div class="tool-button-icon-inner" style="background-color: #000000">
+              <input class="input-field color-input" type="color" value="#000000">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text tool tool-2">
+        <div class="tool-button">
+          <div class="tool-button-icon">
+            <div class="tool-button-icon-inner">a</div>
+          </div>
+        </div>
+        <div class="controls">
+          <textarea class="input-field text-input">将自己的文本复制到这里就可以用啦！Copy your text here and you can use it!'</textarea>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var texter = new Texter();
+        texter.initialize();
+        (function Tools() {
+          const tools = document.querySelectorAll(".tool-button");
+          tools.forEach(function (tool) {
+            tool.addEventListener("click", (e) => {
+              e.target.closest(".tool").classList.toggle("open");
+
+              e.target.closest(".tool").querySelector("input")?.click();
+              e.target.closest(".tool").querySelector("input")?.focus();
+              e.target.closest(".tool").querySelector("textarea")?.focus();
+            });
+          });
+
+          const inputs = document.querySelectorAll(".input-field");
+          inputs.forEach(function (input) {
+            input.addEventListener("blur", (e) => {
+              e.target.closest(".tool").classList.toggle("open");
+            });
+          });
+
+          let input = document.querySelector(".color-input");
+          input.addEventListener("input", (e) => {
+            texter.applyNewColor(e.target.value);
+            e.target.closest(".tool-button-icon-inner").style.backgroundColor =
+              e.target.value;
+          });
+
+          let textInput = document.querySelector(".text-input");
+          textInput.addEventListener("change", (e) => {
+            texter.setText(e.target.value);
+          });
+
+          function save() {
+            let downloadLink = document.createElement("a");
+            downloadLink.setAttribute("download", "paint-toys-text-art.png");
+            let canvas = document.getElementById("canvas");
+            canvas.toBlob(function (blob) {
+              let url = URL.createObjectURL(blob);
+              downloadLink.setAttribute("href", url);
+              downloadLink.click();
+            });
+          }
+
+          let saveInput = document
+            .querySelector(".save")
+            .addEventListener("click", () => {
+              save();
+            });
+
+          document.querySelector(".trash").addEventListener("click", () => {
+            texter.fillBackground();
+          });
+        })();
+      };
+    </script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PRJ9ZMV44M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PRJ9ZMV44M');
+</script><!--!‬‏‪‭‬‬‬‏‭‭‫‪‭‪‭‫‬‬‭‫‫‬‎‏--><!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VJBRK9986D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VJBRK9986D');
+</script>
+
+</body></html>

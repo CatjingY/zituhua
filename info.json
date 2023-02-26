@@ -1,0 +1,111 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.wang/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://paint.toys/calligram/",
+            "path": "index.html",
+            "saved": true,
+            "size": 5184,
+            "children": [
+                {
+                    "url": "https://d33wubrfki0l68.cloudfront.net/c8da8752ff752baf20c1184d519595324a32f000/3a53a/assets/art-icon.png",
+                    "path": "img/art-icon.png",
+                    "saved": true,
+                    "size": 33562
+                },
+                {
+                    "url": "https://d33wubrfki0l68.cloudfront.net/b909493f11f68024690613b8e74903e723a51e0a/692ff/assets/icon-hand.png",
+                    "saved": false
+                },
+                {
+                    "url": "https://d33wubrfki0l68.cloudfront.net/e8161c3fe8d7b81ae0fc7829ea6cee1eaf5dc1de/6ae5f/assets/icon-disk.png",
+                    "saved": false
+                },
+                {
+                    "url": "https://d33wubrfki0l68.cloudfront.net/4e11aefb3790e4cc5575ec8eac2c5a74caedfd82/f27e4/assets/icon-trash.png",
+                    "saved": false
+                },
+                {
+                    "url": "https://d33wubrfki0l68.cloudfront.net/js/efa491167ce657b6cf7a23a91d98a5c54df9c417/text/index.js",
+                    "path": "js/index.js",
+                    "saved": true,
+                    "size": 4867
+                },
+                {
+                    "url": "https://www.googletagmanager.com/gtag/js?id=G-PRJ9ZMV44M",
+                    "saved": false
+                },
+                {
+                    "url": "https://www.googletagmanager.com/gtag/js?id=G-VJBRK9986D",
+                    "saved": false
+                },
+                {
+                    "url": "https://d33wubrfki0l68.cloudfront.net/css/f3733cfea921de99e43917117b73d5f117da0fe7/apps.css",
+                    "path": "css/apps.css",
+                    "saved": true,
+                    "size": 2573
+                }
+            ]
+        }
+    ],
+    "alias": "paint-toys-fziro2se",
+    "info": {
+        "remark": [],
+        "title": "Paint with Text | Calligram Creator",
+        "domain": "paint.toys",
+        "origin": "https://paint.toys",
+        "ip": "35.72.119.46",
+        "main": "index.html",
+        "url": "https://paint.toys/calligram/",
+        "totalSize": "46.2 kB",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://paint.toys/calligram/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.wang/"
+            }
+        },
+        "response": {
+            "responseUrl": "https://paint.toys/calligram/",
+            "redirects": [],
+            "statusCode": 200,
+            "headers": {
+                "age": "192624",
+                "cache-control": "public, max-age=0, must-revalidate",
+                "content-length": "5370",
+                "content-type": "text/html; charset=UTF-8",
+                "date": "Fri, 24 Feb 2023 04:05:20 GMT",
+                "etag": "\"f84b98a60ec0b1602205d220f89a1e36-ssl\"",
+                "server": "Netlify",
+                "strict-transport-security": "max-age=31536000",
+                "x-nf-request-id": "01GT6H814TC7ZZMNT0XA0BGEVN",
+                "connection": "close"
+            }
+        },
+        "time": {
+            "start": "2023-02-26T09:35:44.762Z",
+            "end": "2023-02-26T09:35:45.056Z"
+        }
+    },
+    "options": {
+        "url": "https://paint.toys/calligram/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "formatter": [
+            "css",
+            "js"
+        ],
+        "filenameGenerator": "byType"
+    }
+}
